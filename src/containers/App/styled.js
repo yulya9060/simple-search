@@ -7,6 +7,7 @@ export const Page = styled.div`
   height: 100%;
   justify-content: center;
   align-items: center;
+  background: #E5E5E5;
 `
 
 export const Main = styled.div`
