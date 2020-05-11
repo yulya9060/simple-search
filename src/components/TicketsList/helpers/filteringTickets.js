@@ -14,7 +14,7 @@ import type {
 } from '../../../types'
 
 const filterTicket = (ticket: TTicket, filterKeys: string[]) => {
-  const stopsLength = ticket.segments.reduce((acc, segment) => segment.stops.length, 0)
+  const stopsLength = ticket.segments.reduce((acc, segment) => acc + segment.stops.length, 0)
 
   return filterKeys.some((filterKey) => {
     let isValidTicket
