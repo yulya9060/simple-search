@@ -17,7 +17,7 @@ const TicketsList = ({ tickets, isCompletely, isError }: TTickets) => {
   if (!isCompletely || isError) {
     return (
       <InformationCard
-        text="Билеты грузятся, пожалуйста подождите....."
+        text="Идет загрузка билетов, пожалуйста подождите....."
       />
     )
   }
@@ -26,6 +26,14 @@ const TicketsList = ({ tickets, isCompletely, isError }: TTickets) => {
     return (
       <InformationCard
         text="Произошла ошибка загрузки билетов, пожалуйста перезагрузите страницу"
+      />
+    )
+  }
+
+  if (!tickets.length) {
+    return (
+      <InformationCard
+        text="Расслабьте фильтры"
       />
     )
   }
