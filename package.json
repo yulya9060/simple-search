@@ -1,9 +1,11 @@
 {
   "name": "simple-search",
   "version": "0.1.0",
+  "homepage": "https://yulya9060.github.io/simple-search",
   "private": true,
   "dependencies": {
     "flow": "^0.2.3",
+    "gh-pages": "^2.2.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.2",
     "moment": "^2.25.3",
@@ -19,6 +21,8 @@
     "styled-components": "^5.1.0"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint:js": "eslint --debug src/ --fix"
@@ -29,7 +33,9 @@
     }
   },
   "lint-staged": {
-    "*.(js|jsx)": ["yarn run lint:js"]
+    "*.(js|jsx)": [
+      "yarn run lint:js"
+    ]
   },
   "browserslist": {
     "production": [
