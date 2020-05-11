@@ -42,3 +42,7 @@ https://www.figma.com/file/4fQe1lEbo4DARjvNtaU0uJ/Aviasales-test-task
 
 Для сборки приложения
 
+### `yarn deploy`
+
+Для выкладки приложения на GitHub Pages
+
