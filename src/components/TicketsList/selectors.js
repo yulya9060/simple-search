@@ -4,12 +4,6 @@ import filteringTickets from './helpers/filteringTickets'
 
 const selectTicketsData = (state) => state.ticketsData
 
-export const selectIsLoading = (state) => {
-  const ticketsData = selectTicketsData(state)
-
-  return ticketsData.isLoading
-}
-
 export const selectIsCompletely = (state) => {
   const ticketsData = selectTicketsData(state)
 

@@ -5,7 +5,6 @@ import { connect } from 'react-redux'
 import Ticket from '../Ticket'
 import { TicketsWrapper } from './styled'
 import {
-  selectIsLoading,
   selectIsError,
   selectFilteredTickets,
   selectIsCompletely,
@@ -57,7 +56,6 @@ const TicketsList = ({ tickets, isCompletely, isError }: TTickets) => {
 
 const mapStateToProps = (state) => ({
   tickets: selectFilteredTickets(state),
-  isLoading: selectIsLoading(state),
   isCompletely: selectIsCompletely(state),
   isError: selectIsError(state),
 })
