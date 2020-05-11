@@ -30,7 +30,7 @@ https://www.figma.com/file/4fQe1lEbo4DARjvNtaU0uJ/Aviasales-test-task
 * moment
 
 Рабочее приложение доступно по ссылке:
-[https://yulya9060.github.io/simple-search/build/index.html](https://yulya9060.github.io/simple-search/build/index.html)
+[https://yulya9060.github.io/simple-search](https://yulya9060.github.io/simple-search)
 
 ## Скрипты
 
